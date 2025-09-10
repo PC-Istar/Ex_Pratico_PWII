@@ -1,11 +1,12 @@
 <?php
-require_once 'Produto.php';
+require_once 'Cliente.php';
 
-$produto = new Produto(50,02, "Brinquedo");
-$produto->apresentar();
+$c1 = new Cliente("Roberval", "123.456.789-00", 946523698);
+$c1 ->apresentar();
 
-require_once 'Detalhes.php';
+require_once 'Administrador.php';
 
-$detalhes = new Detalhes(50, 02, "Brinquedo", 2020);
-$detalhes->apresentar();
+$A1 = new Administrador("Antonio", "132.465.765-00", "antonioadm@gmail.com", "eorockyeah");
+$A1 ->apresentar();
+
 ?>
